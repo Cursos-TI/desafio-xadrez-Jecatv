@@ -1,32 +1,51 @@
 #include <stdio.h>
 
-// Desafio de Xadrez - MateCheck
-// Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
-// O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
+// Desafio de Xadrez - MateCheck - Nivel Novato: Movimentação do Bispo, Torre e Rainha.
+
 
 int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+    // Constantes para o número de movimentos
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
+    const int MOV_BISPO = 5;   //5 casas diagonal
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+    const int MOV_TORRE = 5;   //5 casas direita
 
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+    const int MOV_RAINHA = 8;  //8 casas esquerda
 
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
+    printf("Desafio de Xadrez - MateCheck (Nível Novato)\n\n");
 
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
+    //  Bispo movimentação
+
+    printf("Movimento do Bispo (diagonal superior direita):\n");
+
+    for (int i = 1; i <= MOV_BISPO; i++) {
+        
+        printf("Passo %d -> Cima-Direita\n", i);
+    }
+    printf("\n");
+
+    //Torre movimentação
+
+    printf("Movimento da Torre (para a direita):\n");
+
+    for (int i = 1; i <= MOV_TORRE; i++) {
+
+        printf("Passo %d -> Direita\n", i);
+    }
+    printf("\n");
+
+    //Rainha movimentação
+
+    printf("Movimento da Rainha (para a esquerda):\n");
+
+    for (int i = 1; i <= MOV_RAINHA; i++) {
+
+        printf("Passo %d -> Esquerda\n", i);
+    }
+    printf("\n");
+
+    printf(" Fim da Simulação (Nível Novato) \n");
 
     return 0;
 }
